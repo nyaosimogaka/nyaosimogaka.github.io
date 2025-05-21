@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <aside class="sidebar">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="dashboard-page">
+        <h1>YouTube Downloader</h1>
+        <p><em>Enabling local control over livestream and match videos</em></p>
+
+        <br/>
+
+        <h3>Introduction</h3>
+        <p>YouTube does not allow direct downloads. This project provides a streamlined solution for downloading audio, video, or merged media files from YouTube for local storage and analysis. It’s ideal for users who want full control over their videos. </p>
+
+        <br/>
+
+        <h3>Problem</h3>
+        <p> In many African sports teams, YouTube livestreams are emerging as the primary means of broadcasting match footage. Unfortunately, the inability to download this content creates a bottleneck for teams that need to conduct match analysis, performance reviews or even generate highlight reels.
+        </p>
+
+        <br/>
+
+        <h3>Objective</h3>
+        <p>The goal was to:</p>
+        <ul>
+            <li>Provide an easy-to-use app for downloading YouTube videos, audio, or merged media.</li>
+            <li>Ensure compatibility with livestreams and various media formats.</li>
+            <li>Empower teams to retain high-quality match data for downstream analytics tasks.</li>
+        </ul>
+
+        <br/>
+
+        <h3>Implementation</h3>
+        <p>The downloader was built using the following stack:</p>
+        <ul>
+            <li><strong>Python</strong> and <strong>Streamlit</strong> for building an interactive web interface.</li>
+            <li><strong>yt-dlp</strong> to handle media extraction and downloading.</li>
+            <li><strong>ffmpeg</strong> to merge audio and video streams where needed.</li>
+        </ul>
+        <p>The app allows users to input a YouTube URL, select the desired download type, and retrieve the file with a single click—no technical skills required.</p>
+
+        <a href="https://skowd-ytgrab.streamlit.app/" class="btn btn-outline-dark" target="_blank"><i class="fas fa-external-link-alt"></i> Try the app</a>
+
+        <br/><br/>
+
+        <h3>Outcome</h3>
+        <ul>
+            <li>Enabled teams to archive match footage and livestreams locally for analysis.</li>
+            <li>Facilitated highlight reel creation and performance breakdowns using the downloaded videos.</li>
+            <li>Increased the availability of high-quality match data, supporting better-informed decisions.</li>
+        </ul>
+
+        <br/>
+
+        <h3>Conclusion & Next Steps</h3>
+        <ul>
+            <li>Integrate batch downloading to handle entire playlists or channels.</li>
+            <li>Add video clipping or trimming capabilities within the app.</li>
+            <li>Offer cloud integration for storing and sharing downloaded media.</li>
+        </ul>
+        <p>This tool strengthens grassroots analytics capabilities and promotes data-driven decision-making in resource-constrained environments.</p>
+
+    </main>
+
+</body>
+</html>

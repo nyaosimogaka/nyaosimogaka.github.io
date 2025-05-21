@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Video Summarizer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <aside class="sidebar">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="dashboard-page">
+        <h1>Automated Video Summarizer</h1>
+        <p><em>Generating dynamic highlight reels from raw video footage</em></p>
+
+        <br/>
+
+        <h3>Introduction</h3>
+        <p>Manually creating video highlights from long-form footage is time-consuming and repetitive. This project provides an automated solution using Python to generate concise summaries based on provided timestamp data.</p>
+        <p>It’s ideal for sports events, lectures, surveillance, or any scenario where you want to focus only on the moments that matter.</p>
+
+        <br/>
+
+        <h3>Problem</h3>
+        <p>Long videos often contain large chunks of inactive or irrelevant content. Manually scrubbing through hours of footage to extract highlights can take even longer than watching the video itself.</p>
+
+        <br/>
+
+        <h3>Objective</h3>
+        <p>The goal was to:</p>
+        <ul>
+            <li>Automate the creation of highlight videos.</li>
+            <li>Enable flexible input via CSV with custom timestamps.</li>
+            <li>Produce a seamless and high-quality summary video.</li>
+        </ul>
+
+        <br/>
+
+        <h3>Implementation</h3>
+        <p>The summarizer was built using the following stack:</p>
+        <ul>
+            <li><strong>Python</strong> for scripting and automation.</li>
+            <li><strong>Pandas</strong> to handle the CSV with Start/Stop timestamps.</li>
+            <li><strong>MoviePy</strong> to extract subclips and stitch them together into one video.</li>
+        </ul>
+        <p>Each row in the CSV is read as a clip interval. The final output is a concatenation of all clips in chronological order.</p>
+
+        <a href="https://vid-processing.streamlit.app/" class="btn btn-outline-dark" target="_blank"><i class="fas fa-external-link-alt"></i> Try the app</a>
+
+        <br/><br/>
+
+        <h3>Outcome</h3>
+        <ul>
+            <li>Reduced highlight creation time from hours to minutes.</li>
+            <li>Created compact summaries for match analysis and social media sharing.</li>
+            <li>Scalable approach that works with various video lengths and formats.</li>
+        </ul>
+
+        <br/>
+
+        <h3>Conclusion & Next Steps</h3>
+        <ul>
+            <li>Integrate with cloud storage for batch video summarization.</li>
+            <li>Explore audio analysis or computer vision to generate timestamps automatically.</li>
+        </ul>
+        <p>This tool streamlines content creation and is a step toward fully automated video editing workflows.</p>
+
+    </main>
+
+</body>
+</html>
